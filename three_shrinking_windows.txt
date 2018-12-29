@@ -87,6 +87,15 @@ then reformatted again from the windows 10 bootable USB and install upgrade what
 
 
 After reinstalling windows 
+go to cmd and run as adminstrator  
+DISM/  Online /Clean-Image /RestoreHealth
+
+then go to system propertioes >> system protection
+and create a restore point give it 20GB + your work
+follow sections for removing extra files and software installations,
+the Windows OS will start to create plenty of temp as it is setting up for long-term setup
+some files are important read about the folders before deleting things
+https://docs.microsoft.com/en-us/
 
 
 [4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]

@@ -10,6 +10,7 @@ to do is to get a bootable. you might find a bootable lying around in your compu
 (depends on how much you trust Microsft tech and if what you needed repaied is in their financial intrests)
 this bootable allows you to reinstall Windows along with the features that recovery has if something happened to your recovery drive
 also make sure you get your product key or a proper connection to a digital license if needed
+also you might have to turn on USB boot in your BIOS/UEFI firmware
 
 
 [1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]

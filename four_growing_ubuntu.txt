@@ -1,0 +1,126 @@
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+Growing Ubuntu 
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+when you resize a partiton if there is an OS there, if there is data there it might be compromised
+resizing a storage partition that does not have a filesystem will delete the storage so back up offdrive.
+When resizing a ubuntu 16.04 partition, gparted would most likely perseve the OS system if your work is too small
+but your GRUB bootloader is compromised because system boot work is very delicate. you have to purge the GRUB bootloader 
+from the system. for the partition in question you might want to grab as much specs about the OS as possible if problems
+come along the way
+
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+Ubuntu 16.04 bootable
+you want to be able to boot into another ubuntu 16.04 made with the same architecture as the target OS
+if you do not have one get one, if you have done any OS partition resizing into ubuntu, do not boot into ubuntu
+fix other OS preferrably the computer default OS when purchased and get it from there or some where else 
+
+you also might have to turn off Secure Boot in your BIOS/UEFI software
+
+once obtained boot into the firmware and boot the ubuntu bootable
+
+
+
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+gathering information about the target OS
+choose Try Ubuntu without installing from the live iso bootloader menu
+save files
+/etc/fstab
+open a terminal and pipe and save the output of 
+sudo fdisk -l
+sudo blkid
+to deterimine what normal system partition your OS is using 
+must have this figured out because there are necessary steps to take before chrooting into the target OS 
+if using LVM or RAID
+lvscan , lvdisplay
+if RAID it should be obvious as the OS is spread across several devices
+
+now do not continue if you are not connected to the internet and you not have access to all default repositiories listed in
+/etc/apt/sources.list
+
+check internet connection: ifconfig, wget a website
+check ubuntu official repo access : apt-cache search all 
+if you get a big list you likely have access to all the repos
+
+
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]
+
+Mount and chroot into the target OS
+            sudo mount /dev/[name of partition where ubuntu 16.04 is] /mnt
+            sudo mount -B /dev       /mnt/dev      ;
+            sudo mount -B /dev/pts   /mnt/dev/pts ;
+            sudo mount -B /proc      /mnt/proc    ;
+            sudo mount -B /sys       /mnt/sys     ;
+            sudo mount -B /run       /mnt/run     ;
+            sudo chroot /mnt
+
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]
+
+
+[5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5]
+
+(This step assumes that the original GRUB is GRUB 2 and not GRUB legacy, if not do extra research )
+Purging the installed grub and doing a full reinstall
+apt-get update
+apt-get purge grub-common
+
+for reinstalling makes sure that the package is comptaible or designed with target OS architecture
+if you have a BIOS boot partition
+apt-get install grub-pc
+
+if you have a EFI system boot partition with amd64 OS architecture (idk about the other archtechtures)
+apt-get install grub-efi-amd64
+
+if prompted about where to install the bootloader, place it on the device the partition is located on
+update-grub
+CTRL-D
+sudo reboot
+
+[5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5]
+
+
+[6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6]
+
+
+grub 2 after installlation 
+boot into the OS on the hardrive
+in the terminal sudo update-grub
+
+for system checks
+grub-probe -t device /boot/grub
+ifconfig
+echo $SHELL
+who -u
+some sudo systemctl status commands
+
+if all is well ubuntu is smarter than windows so you should be fine
+
+at this point you can restore all backups to your dual-boot computer as the project has been finished 
+
+
+[6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6]
