@@ -1,0 +1,75 @@
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+Backing up your MBR and accessing your windows product key or digital license 
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+Backup your MBR just in case to further debug any problems if the new MBR is the 
+your Windows 10 Home OS is licensed so definitely find out if you have a product key or a digital license
+The product key is firmly hidden in windows, I show how to retrieve, [optional video clip here]
+for any MBR problems run run check disk in cmd in windows 
+The digital license is deeply attached to your Microsoft online account, I advise to turn of extra security feautres
+that would make it possibly difficult to reinstall system software if needed
+
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
+Backing up your MBR
+
+Your MBR is usually the first 2048 bytes on a hard drive which instructs the BIOS or UEFI on where to look to try to get
+the system to boot into an OS
+
+
+in linux ubuntu 16.04.5 terminal 
+
+dd if=/dev/[internal hard drive] of=[/path-to-save/mbr-backup] bs=512 count=1
+
+where hard drive information can be found with lsblk command
+if you know you have one internal drive and are not using RAID find the section withgo to  the /boot MOUNTPOINT
+in NAME that is the name of the partition on your internal drive and your internal drive is the NAME without the number
+if this is not enough use sudo fdisk -l, which will give you very detailed information about the drives on your system
+
+path to save mbr backup can be to a USB, favorably offsite your internal drive, it can be saved on any filesystem its just a piece of code
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+Finding out if you have a product key that activated your Windows 10 OS 
+and getting your product key
+
+if not in windows 10 Home OS its best to go there 
+go to https://www.nirsoft.net/utils/product_cd_key_viewer.html
+find "Download ProduKey for x64"
+go to the file explorer and unarchive it no need to extract
+click on the .exe and select Run
+find the line for windows 10 Home OS and copy and paste the product key is before C:/windows and is 25 digits excluding the NAME of the OS you also have to remove the product ID
+but look at the grid to make sure
+
+
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]
+
+Finding out if you have a digital license 
+
+go to account.live.com >> Devices >> Connect a Device
+nothing there?
+go to (in desktop)Settings >>  Accounts >> Your Info
+if it says connect an account you most likely then do not have a digital license 
+
+If you have a digital license you would have bought the OS from a microsoft store or a licensed retailer and were forced to make an online Microsoft account. if you have a local Microsoft account its likely you have a product 
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]

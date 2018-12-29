@@ -1,0 +1,42 @@
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+getting your windows bootable
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+When your Windows 10 Home OS has been comprosied where its recovery cannot help you want you want 
+to do is to get a bootable. you might find a bootable lying around in your computer but you rather have an official version
+(depends on how much you trust Microsft tech and if what you needed repaied is in their financial intrests)
+this bootable allows you to reinstall Windows along with the features that recovery has if something happened to your recovery drive
+also make sure you get your product key or a proper connection to a digital license if needed
+
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+To format a USB for windows 10 Home OS bootable you want to hard format NTFS
+however to  do this quickly do a quick FAT32 Format followed by a quick NTFS Format
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+
+to create the official windows 10 home bootable
+https://go.microsoft.com/fwlink/p/?LinkID=615943
+download the media creation tool (if there are different tools use the one related to your OS)
+run the tool
+accept license 
+create installation media (USB flash drive, DVD, or ISO )
+its paramount to use the recommded settings for your device and OS specs unless  you know otherwise
+choose USB flash drive or ISO for a disk, the USB must be at least 16GB
+MAKE SURE YOU SELECT THE RIGHT PLACE TO DOWNLOAD THE DRIVE!!
+the process takes a long time
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
