@@ -1,0 +1,64 @@
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+Shrinking Windows
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+When you want to shrink a partition containing an OS what you want to do is make sure that youknow the original 
+fresh install size of the OS partition. Then you want to remove all the uncessary junk and understand how large your 
+OS becuase of system temp files, and additional files it creates as its setting up long term settings 
+and any needed program on the OS then shrink accordingly. Make sure you clear you Recycle Bin or Trash so you can see these 
+changes take effect
+
+
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+To remove system made "extra files"
+
+in windows 10 
+
+File Explorer >> Thic PC >> C: (right click) >> Properties >> Disk Cleanup
+click everything 
+should take out 40GB
+
+Win + R >> prefetch, delete everything in the folder
+Win + R >> Temp, delete everything in the folder
+Win + R >> %temp%, delete everything in the folder
+this softwaredistribution directory contains all incomplete directories 
+Win + R softwaredistribution, delete everything in the folder
+if a file does not want to be deleted just leave it alone
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
+To remove software installed "extra files"
+
+
+windows 10
+these software like to bury theirselves in the system, when in the uninstall wizard try to tell it that you loved the software and want to install a better version
+AVAST takes a very long time to uninstall
+	in uninstall wizard choose AVAST caused too much problems with my software
+WINZIP shouldnt be too tough
+sometimes you need to restart in order to complete the changes
+sometimes you cant even remove the programs settings
+non-running programs can take up 20 mb -5gB of space but when they run they use a lot more  
+if the size does not look right check the backups they might be the culprit 
+
+
+
+
+
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
