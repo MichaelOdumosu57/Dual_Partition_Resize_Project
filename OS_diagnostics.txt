@@ -1,0 +1,97 @@
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+OS diagnostics
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+when you cannot boot into your OS there are plenty of tools with software you can run to try and fix or detect
+the problem
+
+
+
+[1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
+
+
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+accessing recovery
+if you cannot boot into windows you will boot into recovery
+
+accessing repair from live iso
+when you get to the screen, choose repair at the lower left side
+
+
+
+[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+
+
+Partition Wizard
+when you try to boot into your OS from recovery at certain times it will try to run the Partition Wizard
+this wizard from observations only touch the drive Windows is on, if it fails it logs for info to be sent to 
+Windows tech support. then you get sent back to recovery
+
+
+
+
+[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]
+
+CHKDSK command
+in recovery mode
+Troubleshoot >> Advanced Options>> Command Line >> 
+chkdsk C:/ 
+runs in read only mode
+	if it says your partiton is fine the problem is problably not with corrupted disk bits'
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]
+
+
+[5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5]
+
+
+Startup Repair
+
+Troubleshoot >> Advanced OPtioons >> Startup Repair
+this command takes a lot of time to execute
+if it was able to fix it it will tell you if not it would leave the log of its work in the file it specifies,
+if you miss it the location
+C:\windows\System32\Logfiles\Srt\SrtTrail.txt
+get in contact to see what the error means
+
+
+[5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5]
+
+
+
+[6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6]
+
+
+
+some general steps
+
+Troubleshoot >> Advanced Options>> Command Line >> 
+when in the command line you are on a virtual partiton representing the live iso or the recovery partition
+switch to the C:// partition 
+C://
+run 
+bootrec.exe /rebuildbcd
+said 0 windows installations found (for me if this happens it will most likely not fix the problem)
+bootrec.exe /fixmbr  (why you want you MBR backed up )
+bootrec.exe /fixboot (fixes your bootable)
+restart or get help
+if you cannot get into windows OS you are going to have to perform a reinstall from my knowledge
+
+
+
+
+[6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6][6]

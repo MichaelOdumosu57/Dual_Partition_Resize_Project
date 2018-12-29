@@ -39,6 +39,7 @@ To remove software installed "extra files"
 
 windows 10
 these software like to bury theirselves in the system, when in the uninstall wizard try to tell it that you loved the software and want to install a better version
+Win + R, appwiz.cpl to see all downloaded software
 AVAST takes a very long time to uninstall
 	in uninstall wizard choose AVAST caused too much problems with my software
 WINZIP shouldnt be too tough
@@ -58,7 +59,11 @@ if the size does not look right check the backups they might be the culprit
 
 [3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
 
+Shrinking your windows OS 
 
+you need to backup all work in this OS in case anything goes wrong 
+however if you have to reinstall there is an option which saves your work and puts it in a folder in the new OS
+do not use MINI PARTITION TOOL to resize your partitions, and do not resize partitions when mounted
 
 
 [3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
