@@ -20,6 +20,8 @@ To remove system made "extra files"
 in windows 10 
 
 File Explorer >> Thic PC >> C: (right click) >> Properties >> Disk Cleanup
+or
+Win + R, cleanmgr
 click everything 
 should take out 40GB
 
@@ -51,10 +53,9 @@ if the size does not look right check the backups they might be the culprit
 
 
 
-
-
-
 [2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]
+
+
 
 
 [3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
@@ -64,6 +65,28 @@ Shrinking your windows OS
 you need to backup all work in this OS in case anything goes wrong 
 however if you have to reinstall there is an option which saves your work and puts it in a folder in the new OS
 do not use MINI PARTITION TOOL to resize your partitions, and do not resize partitions when mounted
+boot into the windows USB and choose install now 
+choose custom install do not ugprage it even says for custom install that your files will be saved
+make sure that the drive needed to be reinstalled is the Windows OS partition, 
+then install it and ignore the option about GPT and keep installing,
+go through the installation prompts but try not to make any system choices that assume you will keep the OS
+	in File Explorer in This PC >> C:// there is called a folder windows.old your stuff is in here 
+	backup as needed you have access to usb internet its like a new computer
+	shut down and boot back into the live iso
+then go through the steps format it the bootable will format it to the needed format
+use gparted to shrink it remember to consider your work and system excess when shrinking and provide a few dozen GIGS if we are talking mimuim space
+windows 10 OS should be 10-15 GB including system excess
+then reformatted again from the windows 10 bootable USB and install upgrade whatever suits your needs,
+
 
 
 [3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3]
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]
+
+
+After reinstalling windows 
+
+
+[4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4][4]

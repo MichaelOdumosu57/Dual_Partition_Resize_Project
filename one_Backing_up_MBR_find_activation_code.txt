@@ -11,7 +11,8 @@ The product key is firmly hidden in windows, I show how to retrieve, [optional v
 for any MBR problems run run check disk in cmd in windows 
 The digital license is deeply attached to your Microsoft online account, I advise to turn of extra security feautres
 that would make it possibly difficult to reinstall system software if needed
-
+also you want to make sure iexplore is installed and can be run as a GUI from the the cmd before 
+the system is wrecked so if you have big projects heavily interwonven with the OS remote support can better help you
 
 [1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][1]
 
